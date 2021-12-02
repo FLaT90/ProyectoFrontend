@@ -263,10 +263,9 @@
     }
 
 
-    @media (max-width: 480px ){
+    @media (max-width:480px){
 
-        body{
-        }
+        
 
         #nav-top-bar{
             display: none;
@@ -275,7 +274,7 @@
             display: none;
         } 
         header{
-            padding: 0px;
+            width: 100%;
             align-items: center;
             justify-content: flex-start;
         }
@@ -284,7 +283,7 @@
         #home{
             flex-direction: column-reverse;
             padding: 0;
-            width: 100vh;
+            width: auto;
         }
 
         #frase-home{
@@ -292,15 +291,12 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            width: 90vh;
-            padding: 5vh;
-            
+            width: 90%;
         }
 
         .text-home{
-            padding-right: 0;
-            
-
+            padding: 40px 30px 50px 30px;
+            line-height: 2;
         }
 
         .button-home{
@@ -308,81 +304,89 @@
         }
 
         #illustration-home{
-            width: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            width: 90vh;
+            width: 90%;
+            padding: 8%;
+            
+            
         }
 
-       #about-us{
-        display: flex;
-        flex-direction: column;
-        width: 90vh;
-        padding: 5vh;
-       }
+            #about-us{
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            padding: 0;
+            
+        }
 
-       #frame-one{
-        text-align: center;
-        line-height: 2;
-       }
+        #frame-one{
+            text-align: center;
+            line-height: 2;
+            width: 90%;
+            padding: 5%;
+        }
 
-       #frame-two{
-           padding-top: 70px;
-           text-align: center;
-           padding-left: 0;
-       }
+        #frame-two{
+            padding-top: 70px;
+            text-align: center;
+            padding-left: 0;
+            width: auto;
+        }
 
-       .title-sub-frame{
-           height: 40px;
-           background-color: #ffd8ce;
-           padding-top: 8px;
+        .title-sub-frame{
+            height: 40px;
+            background-color: #ffd8ce;
+            padding-top: 8px;
 
-       }
-       .text-sub-frame{
-           text-align: start;
-           line-height: 2;
-       }
+        }
+        .text-sub-frame{
+            text-align: start;
+            line-height: 2;
+            padding-right: 10%;
+            padding-left: 10%;
+        }
 
-       .button-sub-frame{
-         left: -20px;
-       }
+        .button-sub-frame{
+            left: -20px;
+        }
 
-       #testimonials{
-        
-        width: 90vh;
-        padding: 5vh;
-       }
+        #testimonials{
+            
+            width: 100%;
+            
+        }
 
-       #cards-testimonials{
-           
-        flex-direction: column;
-       }
+        #cards-testimonials{
+            
+            flex-direction: column;
+        }
 
-       .card{
-           width: 100%;
-           padding-bottom: 40px;
-       }
+        .card{
+            width: 100%;
+            padding-bottom: 40px;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
 
-       #notice{
-        display: flex;
-        flex-direction: column;
-        width: 100vh;
-        padding: 40vh 10vh 40vh 10vh;
-        text-align: center;
-       }
-       .text-notice{
-        padding-bottom: 60px;
-       }
+        #notice{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 40% 10% 40% 10%;
+            text-align: center;
+        }
+        .text-notice{
+            padding-bottom: 60px;
+        }
 
-       footer{
-           width: 100vh;
-        height: auto;
+        footer{
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+        }
 
-
-       }
-
-    }
+        }
 
     
 
