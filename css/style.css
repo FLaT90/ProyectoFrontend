@@ -7,6 +7,7 @@
     
     body{
         background-image: url('../img/bg-tablet-pattern.svg');
+        background-size:contain;
         font-family: 'Be Vietnam Pro', sans-serif;
         width: 100%;
     }
@@ -18,7 +19,9 @@
         padding: 75px 80px;
        
     }
-
+    #menu-burger{
+        display: none;
+    }
     #nav-top-bar{
         display: flex;
     
@@ -68,6 +71,7 @@
         padding-top: 40px;
         padding-right: 140px;
         padding-bottom: 50px;
+        color:#B3B2B7;
     }
     .button-home{
         color: #FFFFFF;
@@ -91,6 +95,7 @@
     }
     .text-frame-one{
         font-weight: 500;
+        color: #B3B2B7;
         
     }
 
@@ -258,10 +263,13 @@
         color:rgb(143, 148, 167);
     }
 
-     .button-nav-top-bar:hover{
+     .button-nav-top-bar:hover, .button-home:hover, .button-testimonials:hover, .button-form:hover{
         background-color: #f79a83;
     }
 
+    .element-bot-bar:hover{
+       color: rgb(242, 95, 58);
+    }
 
     @media (max-width:480px){
 
@@ -273,13 +281,16 @@
         .button-nav-top-bar{
             display: none;
         } 
-        header{
-            width: 100%;
-            align-items: center;
-            justify-content: flex-start;
+        
+        #menu-burger{
+            display: flex;
         }
 
-
+        header{
+            width: 100%;
+            justify-content: space-around;
+            padding: 80px 0px 75px 0px;
+        }
         #home{
             flex-direction: column-reverse;
             padding: 0;
@@ -293,9 +304,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            
         }
-
         .text-home{
             padding: 40px 30px 50px 30px;
             line-height: 2;
@@ -309,10 +318,7 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            
-            
         }
-
             #about-us{
             display: flex;
             flex-direction: column;
@@ -383,7 +389,50 @@
         footer{
             width: 100%;
             height: auto;
-            flex-direction: column;
+            flex-direction: column-reverse;
+        }
+
+        #panel-one{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 100%;
+
+        }
+
+        .icon{
+            width: 40px;
+            height: 40px;
+        }
+
+        .social-networks{
+            padding-bottom: 50px;
+            width: 100%;
+        }
+        
+
+        #panel-two{
+            align-items: center;
+        }
+
+        #column-one{
+            padding-right: 150px;
+        }
+
+        #panel-three{
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        
+        .all-rights-reserved{
+            display: none;
+        }
+
+        .space-form{
+            padding: 15px 117px 15px 10px;
+        }
+        .button-form{
+            padding: 15px 25px 15px 25px;
         }
 
         }
